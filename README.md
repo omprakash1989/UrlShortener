@@ -8,6 +8,7 @@ Project codebase: <https://github.com/omprakash1989/UrlShortener>
 #### Git Local Config
 
 `git config --global user.name "<First-Name> <Last-Name>"`
+
 `git config --global user.email "<youremailaddress>"`
 
 #### Python Library Requirements
