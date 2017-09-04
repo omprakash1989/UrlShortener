@@ -15,7 +15,10 @@ All the python library requirements are specified in requirements.txt file.
 To install the required libraries:
 
 - `pip install -r requirements.txt`
+
+
 (PS: Linux/Mac Users can use virtualenv. Refer to [DOC] [venv-doc])
+
 
 Installing MysqlServer for safer side (OS dependent) else MySQL-python package will do fine.
 
@@ -72,7 +75,10 @@ Getting ACCESS TOKEN from provider:
 ### References Taken
 --------------------
 Bitly [Developer API Documentmentation] [dev-api-doc]
+
+
 [URL Shortening Wiki] [url-shortening-wiki]
+
 
 
 [venv-doc]: 'http://docs.python-guide.org/en/latest/dev/virtualenvs/'
