@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 # Can be handled by multiple settings file for environment specific key according to environment
 # (dev/staging/production)
 # with __init__ file will be the sym link of environment settings.
-API_ACCESS_TOKEN = 'fc7079054e6a2b63d9acfff5788240c010a20dfd'
+API_ACCESS_TOKEN = ''
 # Bitly API url to shorten the given URL.
 BASE_API_URL = 'https://api-ssl.bitly.com/v3/shorten?access_token={}&longUrl={}'
 

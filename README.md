@@ -6,10 +6,12 @@ Project codebase: <https://github.com/omprakash1989/UrlShortener>
 
 ***
 #### Git Local Config
+
 `git config --global user.name "<First-Name> <Last-Name>"`
 `git config --global user.email "<youremailaddress>"`
 
 #### Python Library Requirements
+
 All the python library requirements are specified in requirements.txt file.
 
 To install the required libraries:
@@ -24,25 +26,37 @@ Installing MysqlServer for safer side (OS dependent) else MySQL-python package w
 
 `sudo aptitude install mysql-server-5.6 libmysqlclient-dev`
 
+
 Create DB and DB User.
 
 `CREATE DATABASE url_shortener CHARACTER SET utf8 COLLATE utf8_unicode_ci;`
+
 `create user 'livelike'@'localhost' identified by 'livelike';`
+
 `grant all on url_shortener.* to 'livelike'@'localhost';`
+
 
 Initial migrations:
 
 - `python manage.py migrate`
 
+
 Create Superuser:
 
 - `python manage.py createsuperuser`
 
+
 Getting ACCESS TOKEN from provider:
+
+
 - Register on [Bitly] [bitly-home]
+
 - Go to [Manage Apps] [bitly-manage-apps]
+
 - generate token by verifying.
+
 - Go to settings file of the application at path `UrlShortner/settings.py` and paste the fetched ACCESS TOKEN against variable `API_ACCESS_TOKEN`
+
 
 ### Focused on
 
@@ -50,14 +64,18 @@ Getting ACCESS TOKEN from provider:
 
 - Saved to a model to restrict redudant API calls to short url provider which is advised to be managed according to requirements (like when to expire and regenerate.).
 
+
 ### APIS
 --------
 
 ##### to create a short url from given long url:
+
 `/api/v1/shortner/get-short-url/`
+
 
 ### Running Application
 -----------------------
+
 - Move to backend application: `cd UrlShortener/`
 
 - Activate virtual environment if required.
@@ -66,15 +84,19 @@ Getting ACCESS TOKEN from provider:
 
 - Tests: `python manage.py test notifications.tests (Server should be running)`
 
+
 ### Stacks Used
 ---------------
 - Python
+
 - Django
+
 - MySql
+
 
 ### References Taken
 --------------------
-Bitly [Developer API Documentmentation] [dev-api-doc]
+Bitly [Developer API Documentation] [dev-api-doc]
 
 
 [URL Shortening Wiki] [url-shortening-wiki]
